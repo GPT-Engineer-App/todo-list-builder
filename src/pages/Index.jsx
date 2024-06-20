@@ -1,4 +1,3 @@
-# Example of a change
 import React, { useState, useEffect } from 'react';
 import { Container, VStack, HStack, Input, Button, Checkbox, Text, Box } from "@chakra-ui/react";
 import { FaPlus, FaTrash } from "react-icons/fa";
