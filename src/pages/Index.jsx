@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+# Example of a change
+import React, { useState, useEffect } from 'react';
 import { Container, VStack, HStack, Input, Button, Checkbox, Text, Box } from "@chakra-ui/react";
 import { FaPlus, FaTrash } from "react-icons/fa";
 
@@ -7,6 +8,10 @@ const Index = () => {
   const [newListName, setNewListName] = useState("");
   const [newTodo, setNewTodo] = useState("");
   const [selectedListIndex, setSelectedListIndex] = useState(null);
+
+  useEffect(() => {
+    console.log("Component mounted");
+  }, []);
 
   const addList = () => {
     if (newListName.trim() === "") return;
